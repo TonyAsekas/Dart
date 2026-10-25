@@ -79,11 +79,20 @@ void main() {
   print(cuadradoNivel(totodile.nivel));
 
   var lista = ["Charmander", "Bulbasaur", "Squirtle"];
-
   List<String> pokemons = ["Gengar", "Pikachu", "Eevee"];
 
   lista.add("Mewtwo");
+  lista.add("Charizard");
+  lista.add("Venasaur");
+  lista.add("Hitmonlee");
+  lista.add("Growlithe");
+  lista.add("Diglett");
+  lista[2] = "Arcanine";
+  lista.add("Dragonite");
+
   pokemons.add("Mew");
+  pokemons.addAll(["Entei", "Suicune", "Raikou"]);
+  pokemons.add("Torchic");
 
   print(lista);
   print(pokemons);
