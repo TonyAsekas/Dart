@@ -23,6 +23,12 @@ class Pokemon {
   void crear({String param1 = "Ditto", int param2 = 1}) {
     print("Se ha creado el pokemon: $param1 con nivel: $param2");
   }
+
+  Function saludar([String nombre = "Vulpix"]) {
+    return () {
+      print("Hola $nombre");
+    };
+  }
 } // class
 
 void main() {
@@ -63,4 +69,22 @@ void main() {
   }
 
   prueba2();
+
+  var saludar = Pokemon().saludar();
+  saludar();
+  var saludoBulbasur = Pokemon().saludar("Bulbasaur");
+  saludoBulbasur();
+
+  var cuadradoNivel = (int n) => n * n;
+  print(cuadradoNivel(totodile.nivel));
+
+  var lista = ["Charmander", "Bulbasaur", "Squirtle"];
+
+  List<String> pokemons = ["Gengar", "Pikachu", "Eevee"];
+
+  lista.add("Mewtwo");
+  pokemons.add("Mew");
+
+  print(lista);
+  print(pokemons);
 }
