@@ -23,9 +23,6 @@ class Pokemon {
   void crear({String param1 = "Ditto", int param2 = 1}) {
     print("Se ha creado el pokemon: $param1 con nivel: $param2");
   }
-
-  
-
 } // class
 
 void main() {
@@ -48,4 +45,22 @@ void main() {
 
   var ditto = Pokemon().crear();
   var lugia = Pokemon().crear(param1: "Lugia", param2: 100);
+
+  // Null Protectios (Null -aware o null -safety)
+
+  //?? ? !
+
+  String? pikachu;
+  void prueba() {
+    print(pikachu ?? "Pikachu");
+  }
+
+  prueba();
+
+  String? trainer = "Ash";
+  void prueba2() {
+    print(trainer.length);
+  }
+
+  prueba2();
 }
