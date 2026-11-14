@@ -14,4 +14,13 @@ class Mascota {
     this.precio,
     this.disponible,
   );
+
+  void mostrarInformacion() {
+    print('$nombre-($especie)-$edad años-$precio€');
+  }
+
+  @override
+  String toString() {
+    return '$nombre ($especie)';
+  }
 }
