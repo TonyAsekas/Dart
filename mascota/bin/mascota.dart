@@ -9,7 +9,6 @@ void main() {
 
   final tony = Cliente(1, "Tony", "toni@example.com");
   print(tony);
-
   mascota.mostrarInformacion();
 
   var supabase = DatabaseConfig.client;
